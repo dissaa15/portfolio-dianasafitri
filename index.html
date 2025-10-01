@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dissa.proudly - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Dissa.proudly</div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="home">
+    <h2>My Portofolio</h2>
+    <div class="grid">
+      <div class="card" onclick="openModal('img/proyek1.png')">
+        <img src="html.png" alt="Proyek 1">
+        <h3>Proyek Website</h3>
+        <p>Membuat website responsif dengan HTML, CSS, dan JavaScript.</p>
+      </div>
+      <div class="card" onclick="openModal('img/proyek2.jpg')">
+        <img src="publicspeaking.png" alt="Proyek 2">
+        <h3>Public speaking</h3>
+        <p>Lebih dari 15x menjadi Master Of Ceremony pada acara formal maupun nonformal.</p>
+      </div>
+      <div class="card" onclick="openModal('img/proyek3.jpg')">
+        <img src="desain.jpeg" alt="Proyek 3">
+        <h3>Desain Canva</h3>
+        <p>Lebih dari 10 desain yang telah dibuat.</p>
+      </div>
+      <div class="card" onclick="openModal('img/mengajar.jpg')">
+        <img src="mengajar.JPG" alt="Portofolio Mengajar">
+        <h3>Mengajar</h3>
+        <p>Pengalaman lebih dari 1 tahun sebagai pengajar aktif di TPQ dan Madrasah Diniyah dan menjadi guru les privat.</p>
+      </div>
+       <div class="card" onclick="openModal('img/proyek3.jpg')">
+        <img src="organisasi.jpeg" alt="Proyek 3">
+        <h3>Kegiatan Organisasi</h3>
+        <p>Lebih dari 10 ikut serta aktif dalam kepanitiaan program kerja Himafortic</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Dissa.proudly. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function openModal(src) {
+      document.getElementById("myModal").style.display = "block";
+      document.getElementById("modalImg").src = src;
+    }
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+  </script>
+</body>
+</html>
