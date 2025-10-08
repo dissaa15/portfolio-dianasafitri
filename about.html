@@ -14,13 +14,15 @@
       <li><a href="about.html" class="active">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <button id="modeBtn" class="mode-btn" onclick="toggleMode()">☀️</button>
   </nav>
 
   <section class="about-section">
     <h2 class="about-title">Diana Safitri</h2>
 
     <div class="about-profile">
-      <img src="dissa.jpeg" alt="Foto Profil">
+      <img id="fotoProfil" src="dissa.jpeg" alt="Foto Profil">
+      <button id="fotoToggleBtn" onclick="toggleFoto()">Sembunyikan Foto</button>
     </div>
 
     <div class="about-card">
@@ -49,8 +51,12 @@
         berkembang serta berkontribusi lebih luas di berbagai bidang.
       </p>
     </div>
+  </section>
 
+  <footer>
+    <p>&copy; 2025 Dissa.proudly. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
