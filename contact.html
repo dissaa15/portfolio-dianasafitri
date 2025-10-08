@@ -6,14 +6,15 @@
   <title>Dissa.proudly - Contact</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="contact-body">
   <nav class="navbar">
     <h1 class="logo">Dissa.proudly</h1>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
+    <button id="modeBtn" class="mode-btn" onclick="toggleMode()">☀️</button>
   </nav>
 
   <section class="contact">
@@ -25,8 +26,32 @@
       <p><strong>Instagram:</strong> <a href="https://instagram.com/dissa.proudlyinhere" target="_blank">@dissa.proudlyinhere</a></p>
       <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/dianasafitri" target="_blank">linkedin.com/in/dianasafitri</a></p>
     </div>
+
+    <!-- Form Pesan -->
+    <form id="contactForm">
+      <div class="form-wrapper">
+        <div class="form-icon left">🎀</div>
+        <div class="form-icon right">💌</div>
+
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" placeholder="Masukkan nama Anda">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Masukkan email Anda">
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" placeholder="Tulis pesan Anda..."></textarea>
+
+        <button type="button" onclick="kirimPesan()">Kirim</button>
+        <p id="notifikasi"></p>
+      </div>
+    </form>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Dissa.proudly. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
-
