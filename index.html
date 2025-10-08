@@ -14,6 +14,7 @@
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <button id="modeBtn" class="mode-btn" onclick="toggleMode()">☀️</button>
   </nav>
 
   <section class="home">
@@ -26,7 +27,7 @@
       </div>
       <div class="card" onclick="openModal('img/proyek2.jpg')">
         <img src="publicspeaking.png" alt="Proyek 2">
-        <h3>Public speaking</h3>
+        <h3>Public Speaking</h3>
         <p>Lebih dari 15x menjadi Master Of Ceremony pada acara formal maupun nonformal.</p>
       </div>
       <div class="card" onclick="openModal('img/proyek3.jpg')">
@@ -37,12 +38,12 @@
       <div class="card" onclick="openModal('img/mengajar.jpg')">
         <img src="mengajar.JPG" alt="Portofolio Mengajar">
         <h3>Mengajar</h3>
-        <p>Pengalaman lebih dari 1 tahun sebagai pengajar aktif di TPQ dan Madrasah Diniyah dan menjadi guru les privat.</p>
+        <p>Pengalaman lebih dari 1 tahun sebagai pengajar aktif di TPQ dan Madrasah Diniyah serta guru les privat.</p>
       </div>
-       <div class="card" onclick="openModal('img/proyek3.jpg')">
-        <img src="organisasi.jpeg" alt="Proyek 3">
+      <div class="card" onclick="openModal('img/organisasi.jpeg')">
+        <img src="organisasi.jpeg" alt="Kegiatan Organisasi">
         <h3>Kegiatan Organisasi</h3>
-        <p>Lebih dari 10 ikut serta aktif dalam kepanitiaan program kerja Himafortic</p>
+        <p>Aktif lebih dari 10 kali dalam kepanitiaan program kerja Himafortic.</p>
       </div>
     </div>
   </section>
@@ -56,14 +57,6 @@
     <p>&copy; 2025 Dissa.proudly. All rights reserved.</p>
   </footer>
 
-  <script>
-    function openModal(src) {
-      document.getElementById("myModal").style.display = "block";
-      document.getElementById("modalImg").src = src;
-    }
-    function closeModal() {
-      document.getElementById("myModal").style.display = "none";
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
